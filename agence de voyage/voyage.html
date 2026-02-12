@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel Agency</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee') center/cover no-repeat;
+            height: 90vh;
+            color: white;
+        }
+        .hero-overlay {
+            background-color: rgba(0, 0, 0, 0.55);
+            height: 100%;
+        }
+        footer i {
+            font-size: 1.4rem;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#"> Travel</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                <li class="nav-item"><a class="nav-link" href="#destinations">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="#voyages">Circuits</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="home" class="hero">
+    <div class="hero-overlay d-flex justify-content-center align-items-center text-center">
+        <div>
+            <h1 class="display-4 fw-bold">Decouvrez le monde</h1>
+            <p class="lead">Des voyages inoubliables,juste pour vous</p>
+            <a href="#destinations" class="btn btn-warning btn-lg">Découvrir nos offres</a>
+        </div>
+    </div>
+</section>
+<section id="destinations" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Nos Destinations</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e" class="card-img-top" alt="Plage">
+                    <div class="card-body">
+                        <h5 class="card-title">Maldives</h5>
+                        <p class="card-text">Plages paradisiaques et eaux turquoise.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" class="card-img-top" alt="Paris">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris</h5>
+                        <p class="card-text">La ville de l'amour.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="Capture d'écran 2026-02-12 035319.png" class="card-img-top" alt="Safari">
+                    <div class="card-body">
+                        <h5 class="card-title">Kenya</h5>
+                        <p class="card-text">Emplus d'admirer le paysage Africain vous pourrais egalement deguster les plats du pays et admirer de beaux coucher de soleils .</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="voyages" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">nos Circuits</h2>
+        <div class="accordion" id="accordionVoyages">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#voyage1">
+                        Circuit Europe Classique
+                    </button>
+                </h2>
+                <div id="voyage1" class="accordion-collapse collapse show" data-bs-parent="#accordionVoyages">
+                    <div class="accordion-body">
+                        Découvrez les capitales européennes en 10 jours.
+                        <br><a href="#" class="text-primary">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#voyage2">
+                        Aventure Africaine
+                    </button>
+                </h2>
+                <div id="voyage2" class="accordion-collapse collapse" data-bs-parent="#accordionVoyages">
+                    <div class="accordion-body">
+                        Safari, paysages et découvertes culturelles.
+                        <br><a href="#" class="text-primary">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#voyage3">
+                        Évasion Tropicale
+                    </button>
+                </h2>
+                <div id="voyage3" class="accordion-collapse collapse" data-bs-parent="#accordionVoyages">
+                    <div class="accordion-body">
+                        Séjour détente sur des îles de rêve.
+                        <br><a href="#" class="text-primary">Voir les détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Contactez-nous</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Nom</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Destination d’intérêt</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>>
+<footer class="bg-primary text-white text-center py-3">
+    <p class="mb-2">© 2026  Travel Agency. Tous droits réservés.</p>
+    <div>
+        <i class="bi bi-facebook"></i>
+        <i class="bi bi-instagram"></i>
+        <i class="bi bi-twitter"></i>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
